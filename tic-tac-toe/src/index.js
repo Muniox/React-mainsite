@@ -54,8 +54,7 @@ class Board extends React.Component {
     }
 }
 
-class Game extends React.Component {
-    render() {
+const Game = () => {
         return (
             <div className="game">
                 <div className="game-board">
@@ -67,10 +66,9 @@ class Game extends React.Component {
                 </div>
             </div>
         );
-    }
 }
 
 // ========================================
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Game />);
+root.render(<Game />)
